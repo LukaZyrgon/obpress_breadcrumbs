@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+}
+
+.custom_breadcrumb {
+  color: #6E6E6E;
+  text-decoration: none;
+}
+
+.custom_breadcrumb:hover {
+  color: #6E6E6E;
+}
+
+.breadcrumb_slash {
+  margin: 0px 3px;
+}
+
+.last_breadcrumb {
+  font-weight: 600;
+  color: #000000;
+}
