@@ -28,7 +28,7 @@ class Breadcrumbs extends \Elementor\Widget_Base
 
 	public function get_title()
 	{
-		return __('Breadcrumbs', 'plugin-name');
+		return __('Breadcrumbs', 'OBPress_Breadcrumbs');
 	}
 
 	public function get_icon()
@@ -67,7 +67,7 @@ class Breadcrumbs extends \Elementor\Widget_Base
 				'label' => __( 'Breadcrumb location', 'OBPress_Breadcrumbs' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'input_type' => 'url',
-				'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Enter Breadcrumb Link', 'OBPress_Breadcrumbs' ),
 				'label_block' => true,
 			]
 		);
@@ -75,7 +75,7 @@ class Breadcrumbs extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_custom_breadcrumbs',
 			[
-				'label' => __( 'Breadcrumbs', 'plugin-domain' ),
+				'label' => __( 'Breadcrumbs', 'OBPress_Breadcrumbs' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'title_field' => '{{{ obpress_custom_breadcrumbs_name }}}',
@@ -88,7 +88,7 @@ class Breadcrumbs extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'colors_section',
 			[
-				'label' => __('Colors', 'plugin-name'),
+				'label' => __('Colors', 'OBPress_Breadcrumbs'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
