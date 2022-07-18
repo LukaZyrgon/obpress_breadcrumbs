@@ -13,7 +13,8 @@
 }
 
 .custom_breadcrumb:hover {
-  color: #6E6E6E;
+  color: #0C83D9;
+  text-decoration: underline;
 }
 
 .breadcrumb_slash {
@@ -23,4 +24,8 @@
 .last_breadcrumb {
   font-weight: 600;
   color: #000000;
+}
+
+.custom_breadcrumb.last_breadcrumb:hover {
+  text-decoration: none!important;
 }

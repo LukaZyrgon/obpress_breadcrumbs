@@ -112,9 +112,9 @@ class Breadcrumbs extends \Elementor\Widget_Base
 				'label' => __('Breadcrumbs Name Active Color', 'OBPress_Breadcrumbs'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#000000',
+				'default' => '#000',
 				'selectors' => [
-					'.breadcrumbs .last_breadcrumb' => 'color: {{obpress_custom_breadcrumbs_name_active_color}}',
+					'.breadcrumbs .custom_breadcrumb.last_breadcrumb' => 'color: {{obpress_custom_breadcrumbs_name_active_color}}',
 				],
 			]
 		);
@@ -138,9 +138,22 @@ class Breadcrumbs extends \Elementor\Widget_Base
 				'label' => __('Breadcrumbs Hover Color', 'OBPress_Breadcrumbs'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#6E6E6E',
+				'default' => '#0C83D9',
 				'selectors' => [
 					'.breadcrumbs .custom_breadcrumb:hover' => 'color: {{obpress_custom_breadcrumbs_name_hover_color}}',
+				],
+			]
+		);
+
+		$this->add_control(
+			'obpress_custom_breadcrumbs_name_active_hover_color',
+			[
+				'label' => __('Breadcrumbs Name Active Hover Color', 'OBPress_Breadcrumbs'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#000',
+				'selectors' => [
+					'.breadcrumbs .custom_breadcrumb.last_breadcrumb:hover' => 'color: {{obpress_custom_breadcrumbs_name_active_color}}',
 				],
 			]
 		);
